@@ -2,7 +2,11 @@
 # -*- coding: utf-8 -*-
 def majuscule(mot):
     # TODO completer la fonction ici
-    return mot
+    res = ''
+    for lettre in mot:
+        if ord(lettre) > 96 and ord(lettre) < 123:
+            res += chr(ord(lettre) - 32)
+    return res
 
 
 if __name__ == '__main__':
